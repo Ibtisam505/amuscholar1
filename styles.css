@@ -1,10 +1,6 @@
 * {
     margin: 0;
     padding: 0;
-    text-decoration: none;
-	-webkit-tap-highlight-color: transparent;
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0); 
-
 }
 
 body {
@@ -73,7 +69,6 @@ a:hover {
     border: 3px solid rgba(149, 0, 255, 0.908);
     border-radius: 5px;
     margin: 20px auto;
-    margin-bottom:50px;
     padding: 5vw;
     padding-bottom: 140px;
     text-align: center;
@@ -227,8 +222,18 @@ option {
     animation: subcard 0.5s;
 }
 
+.do{
+    display:inline-block;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 20px;
+}
+
 @media (max-width: 600px) {
     .menu-bar{
+        position:relative;
         font-size: small;
         text-align: end;;
     }
