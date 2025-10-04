@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    justify-content: center;
+    text-align: left;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #000000;
+    color: #e0e6ed;
+    line-height: 1.6;
+    min-height: 100vh;
+    margin: 0px 100px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: 300;
+    color: #64ffda;
+    text-shadow: 0 0 20px rgba(100, 255, 218, 0.3);
+}
+
+.collapsible {
+    cursor: pointer;
+    user-select: none;
+    transition: color 0.3s ease;
+}
+
+.collapsible:hover {
+    color: #5500ff;
+}
+
+.toggle {
+    float: right;
+    font-weight: bold;
+    transition: transform 0.3s ease;
+}
+
+.content {
+    max-height: 0;
+    transition: max-height 0.3s ease;
+    overflow: hidden;
+}
+
+.content.expanded {
+    max-height: 1000px;
+}
+
+li {
+
+    border: 1px solid #865ee2;
+    width: fit-content;
+    padding: 5px 20px;
+    border-radius: 1000px;
+    margin: 10px 5px;
+    display:inline-block;
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.section {
+    border: 2px solid #865ee2;
+    border-radius: 10px;
+    margin: 15px 0;
+    padding: 15px;
+}
+
+.search-container {
+    margin: 20px 0;
+    width: 100%
+}
+
+#searchInput {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    border: 2px solid #865ee2;
+    border-radius: 1000px;
+    background: rgba(134, 94, 226, 0.1);
+    color: #e0e6ed;
+    font-size: 20px;
+}
+
+#searchInput::placeholder {
+    color: #a0a6ad;
+}
+@media (max-width: 768px) {
+    body {
+        margin: 0;
+        padding: 10px;
+    }
+
+    h2 {
+        font-size: 19px;
+    }
+
+    #searchInput {
+        font-size: 16px;
+        padding: 16px;
+        max-width: 100%;
+    }
+
+    .section {
+        padding: 10px;
+        margin: 10px 0;
+    }
+
+    li {
+        padding: 4px 12px;
+        font-size: 16px;
+        margin: 5px 3px;
+    }
+
+    .toggle {
+        font-size: 18px;
+    }
+}
