@@ -228,7 +228,6 @@ option {
 
 @media (max-width: 600px) {
     .menu-bar{
-        position:relative;
         font-size: small;
         text-align: end;;
     }
