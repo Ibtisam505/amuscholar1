@@ -105,12 +105,13 @@ h1 {
     padding: 17px;
     border-radius: 100px;
     position: relative;
+    display: inline-block;
     top:50px;
     background: black;
     font-size: large;
     margin-top: 10px;
     cursor: pointer;
-    margin: 0px 10px;
+    margin: 10px 10px;
 }
 
 @property --angle {
